@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { MessageSquare, X, Send, Loader2 } from 'lucide-react';
 import { GoogleGenAI } from '@google/genai';
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+console.log('API KEY:', import.meta.env.VITE_GEMINI_API_KEY);
 const SYSTEM_INSTRUCTION = `You are an advisory bot for Powerwealth Advisory.
 Tone: measured, professional, knowledgeable, realistic, human-sounding, no BS.
 Context: Powerwealth Advisory provides specialist commercial overlay and project risk advisory for African IPPs, energy transactions, and project-financed assets.
