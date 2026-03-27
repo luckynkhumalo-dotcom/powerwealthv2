@@ -3,12 +3,13 @@ import { motion, AnimatePresence } from 'motion/react';
 import { MessageSquare, X, Send, Loader2 } from 'lucide-react';
 import { GoogleGenAI } from '@google/genai';
 
-const ai = new GoogleGenAI({ apiKey: import.meta.env.AIzaSyBuTOImPsyNOt-TeVb4pmDpr3dTKvWT8Ig });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 ```
+The key itself does NOT go here — just the variable name `VITE_GEMINI_API_KEY`.
 
-Then in your `.env` file, make sure the variable is named with the `VITE_` prefix:
+**2. In your `.env` file — should be:**
 ```
-AIzaSyBuTOImPsyNOt-TeVb4pmDpr3dTKvWT8Ig=your_actual_key_here
+VITE_GEMINI_API_KEY=AIzaSyBuTOImPsyNOt-TeVb4pmDpr3dTKvWT8Ig
 
 const SYSTEM_INSTRUCTION = `You are an advisory bot for Powerwealth Advisory.
 Tone: measured, professional, knowledgeable, realistic, human-sounding, no BS.
