@@ -9,7 +9,7 @@ The key itself does NOT go here — just the variable name `VITE_GEMINI_API_KEY`
 
 **2. In your `.env` file — should be:**
 ```
-VITE_GEMINI_API_KEY=AIzaSyBuTOImPsyNOt-TeVb4pmDpr3dTKvWT8Ig
+VITE_GEMINI_API_KEY=AIzaSyDGGW7nclEWj2KY9oIju4ybimGVa-r6Dkk
 
 const SYSTEM_INSTRUCTION = `You are an advisory bot for Powerwealth Advisory.
 Tone: measured, professional, knowledgeable, realistic, human-sounding, no BS.
