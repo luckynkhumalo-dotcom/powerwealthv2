@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'motion/react';
 import { MessageSquare, X, Send, Loader2 } from 'lucide-react';
 import { GoogleGenAI } from '@google/genai';
 
-console.log('API KEY:', import.meta.env.VITE_GEMINI_API_KEY);
+console.log('API KEY:', import.meta.env.AIzaSyxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx6Dkk);
 
-const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.AIzaSyxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx6Dkk });
 console.log('API KEY:', import.meta.env.VITE_GEMINI_API_KEY);
 const SYSTEM_INSTRUCTION = `You are an advisory bot for Powerwealth Advisory.
 Tone: measured, professional, knowledgeable, realistic, human-sounding, no BS.
